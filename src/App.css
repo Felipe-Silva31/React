@@ -1,38 +1,67 @@
 .App {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 1vh;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+button, input{
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #849ffa;
+}
+
+.header{
+  height: 70px;
+  width: 100%;
+  text-align: right;
+  background: #195aec;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header input {
+  margin: 5px;
+  background-color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  margin: 50px 8%;
+  padding-bottom: 10px;
+  width: 33.3%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  text-align: center;
+  float: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card img {
+  margin-bottom: 0;
+  max-width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.favoritos {
+  margin: 50px 8%;
+  padding-bottom: 10px;
+  width: 33.3%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  text-align: center;
+  float: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.repositorios {
+  text-align: center;
+  clear: both;
+}
+
+.repo-header {
+  height: 50px;
+  background: #195aec;
+}
+
+.repo-content {
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
